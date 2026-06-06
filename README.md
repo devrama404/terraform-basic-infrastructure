@@ -251,7 +251,7 @@ output "s3_bucket_arn" {
 
 Ikuti instruksi berikut secara berurutan di dalam terminal direktori proyek Anda:
 
-### Langkah 10: Inisialisasi Proyek (`terraform init`)
+### Langkah 6: Inisialisasi Proyek (`terraform init`)
 
 * **Penjelasan:** Perintah ini menganalisis file kode Anda, mengunduh plugin provider AWS yang diperlukan, dan menyiapkan direktori kerja lokal `.terraform/`.
 
@@ -260,7 +260,7 @@ terraform init
 
 ```
 
-### Langkah 11: Validasi Kode (`terraform validate`)
+### Langkah 7: Validasi Kode (`terraform validate`)
 
 * **Penjelasan:** Melakukan pengecekan internal apakah kode Terraform Anda memiliki kesalahan penulisan (*syntax error*) atau kesalahan struktural tanpa menyentuh cloud AWS.
 
@@ -269,7 +269,7 @@ terraform validate
 
 ```
 
-### Langkah 12: Membuat Rencana Eksekusi (`terraform plan`)
+### Langkah 8: Membuat Rencana Eksekusi (`terraform plan`)
 
 * **Penjelasan:** Terraform akan mencocokkan kode Anda dengan kondisi real di AWS, lalu merancang perencanaan perubahan. Tanda `+` berarti resource baru akan dibuat.
 
@@ -278,7 +278,7 @@ terraform plan
 
 ```
 
-### Langkah 13: Menerapkan Perubahan & Deploy (`terraform apply`)
+### Langkah 9: Menerapkan Perubahan & Deploy (`terraform apply`)
 
 * **Penjelasan:** Ini adalah langkah eksekusi nyata untuk membangun infrastruktur ke AWS.
 
@@ -289,7 +289,7 @@ terraform apply
 
 *Saat muncul konfirmasi, ketik `yes` dan tekan **Enter**. Tunggu hingga proses pipeline selesai.*
 
-### Langkah 14: Verifikasi Output Telemetri
+### Langkah 10: Verifikasi Output Telemetri
 
 Jika sukses, terminal akan memunculkan informasi ringkas dari file `outputs.tf`:
 
@@ -302,7 +302,7 @@ s3_bucket_arn = "arn:aws:s3:::terraform-basic-bucket-namaanda-404"
 
 ---
 
-## 🔍 Langkah 15: Verifikasi Resource di AWS Console
+## 🔍 Langkah 11: Verifikasi Resource di AWS Console
 
 Silakan masuk ke AWS Web Console Anda untuk memastikan semua resource berhasil dibuat:
 
@@ -312,7 +312,7 @@ Silakan masuk ke AWS Web Console Anda untuk memastikan semua resource berhasil d
 
 ---
 
-## 🧠 Langkah 16 & 17: Memahami Konsep Terraform Local State
+## 🧠 Langkah 12 & 13: Memahami Konsep Terraform Local State
 
 Setelah Anda melakukan `terraform apply`, sebuah file rahasia bernama `terraform.tfstate` akan tercipta secara otomatis di direktori Anda.
 
@@ -328,7 +328,7 @@ terraform state list
 
 ---
 
-## 🛑 Langkah 18: Menghancurkan Infrastruktur (`terraform destroy`)
+## 🛑 Langkah 14: Menghancurkan Infrastruktur (`terraform destroy`)
 
 Untuk menghindari tagihan yang tidak diinginkan dari AWS (*cost-management*), Anda wajib membersihkan lingkungan laboratorium ini jika sudah selesai digunakan. Penghapusan seluruh infrastruktur dapat dilakukan secara otomatis lewat satu perintah:
 
@@ -341,7 +341,7 @@ terraform destroy
 
 ---
 
-## 📦 Langkah 19: Manajemen Kode & Push ke GitHub
+## 📦 Langkah 15: Manajemen Kode & Push ke GitHub
 
 Simpan hasil kerja profesional Anda ke dalam repositori GitHub Anda sebagai portofolio:
 
