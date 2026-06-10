@@ -340,28 +340,3 @@ terraform destroy
 *Tinjau aset yang akan dihapus, ketik `yes` untuk memberikan konfirmasi final.*
 
 ---
-
-## 📦 Langkah 15: Manajemen Kode & Push ke GitHub
-
-Simpan hasil kerja profesional Anda ke dalam repositori GitHub Anda sebagai portofolio:
-
-```bash
-# Inisialisasi repositori Git lokal
-git init
-
-# Tambahkan semua file (file rahasia aman karena sudah ada .gitignore)
-git add .
-
-# Buat snapshot komitmen pertama dengan standardisasi pesan commit
-git commit -m "feat: inisialisasi baseline infrastruktur dasar AWS menggunakan terraform"
-
-# Hubungkan ke repository remote GitHub Anda
-git remote add origin [https://github.com/username-anda/terraform-basic-infrastructure.git](https://github.com/username-anda/terraform-basic-infrastructure.git)
-git branch -M main
-git push -u origin main
-
-```
-
-```
-
-```
