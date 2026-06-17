@@ -259,6 +259,7 @@ Ikuti instruksi berikut secara berurutan di dalam terminal direktori proyek Anda
 terraform init
 
 ```
+![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5o4mazj7b1n3nclv0g5u.png)
 
 ### Langkah 7: Validasi Kode (`terraform validate`)
 
@@ -268,6 +269,7 @@ terraform init
 terraform validate
 
 ```
+![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/r2pdgwnvldu4ltnnkjzd.png)
 
 ### Langkah 8: Membuat Rencana Eksekusi (`terraform plan`)
 
@@ -293,12 +295,8 @@ terraform apply
 
 Jika sukses, terminal akan memunculkan informasi ringkas dari file `outputs.tf`:
 
-```text
-Outputs:
-ec2_public_ip = "54.255.xx.xx"
-s3_bucket_arn = "arn:aws:s3:::terraform-basic-bucket-namaanda-404"
+![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/d5f18uv9ihfx1tyv7zsv.png)
 
-```
 
 ---
 
@@ -307,8 +305,12 @@ s3_bucket_arn = "arn:aws:s3:::terraform-basic-bucket-namaanda-404"
 Silakan masuk ke AWS Web Console Anda untuk memastikan semua resource berhasil dibuat:
 
 1. **EC2 Dashboard -> Instances:** Pastikan ada instance bernama `Terraform-EC2` dengan status *Running*.
+   ![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/xowj49h6clyg0isp83wx.png)
 2. **EC2 Dashboard -> Elastic IPs:** Periksa alokasi IP publik statis baru yang terikat pada instance tersebut.
+   ![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/0hju7jud0xqmgz04uo7a.png)
 3. **S3 Dashboard:** Pastikan bucket dengan nama unik global Anda sudah terdaftar di sistem penyimpanan cloud.
+   ![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/oy7yjgjhwvnsbfm0mzoc.png)
+
 
 ---
 
